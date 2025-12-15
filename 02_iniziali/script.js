@@ -4,9 +4,11 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 function primaLettera(lettera) {
-  for (let i = 0; i <= lettera.length; i++) {
-    return lettera[i].substring(0, 1);
+  let iniziali = [];
+  for (let i = 0; i < lettera.length; i++) {
+    iniziali.push(lettera[i][0]);
   }
+  return iniziali;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
