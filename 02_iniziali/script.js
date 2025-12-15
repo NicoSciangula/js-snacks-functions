@@ -3,10 +3,10 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
-function primaLettera(lettera) {
+function primaLettera(lista) {
   let iniziali = [];
-  for (let i = 0; i < lettera.length; i++) {
-    iniziali.push(lettera[i][0]);
+  for (let i = 0; i < lista.length; i++) {
+    iniziali.push(lista[i][0]);
   }
   return iniziali;
 }
