@@ -3,10 +3,10 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
-function soloUnaLettera(nomi) {
+function soloUnaLettera(nomi, iniziale) {
   let soloLetteraA = [];
   for (let i = 0; i < nomi.length; i++) {
-    if (nomi[i][0] === "A") {
+    if (nomi[i][0] === iniziale) {
       soloLetteraA.push(nomi[i]);
     }
   }
@@ -14,6 +14,6 @@ function soloUnaLettera(nomi) {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(soloUnaLettera(names));
+console.log(soloUnaLettera(names, "A"));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
